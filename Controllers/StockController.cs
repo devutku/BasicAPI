@@ -19,7 +19,7 @@ namespace api.Controllers
             return Ok(stocks);
         }
         [HttpGet("{id}")]
-        public IActionResult GetById(int id)
+        public IActionResult GetById([FromRoute] int id)
         {
             var stock = _context.Stock.Find(id);
             if (stock == null)
