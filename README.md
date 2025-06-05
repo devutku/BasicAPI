@@ -20,7 +20,8 @@ This project is a clone stock trading API built with ASP.NET Core, using Code Fi
 
 ## 🗃️ Entity Models
 
-### 📄 Stock.cs  
+### 📄 Stock.cs
+```csharp
 public class Stock  
 {  
     public int Id { get; set; }  
@@ -29,8 +30,9 @@ public class Stock
     public decimal Price { get; set; }  
     public List<Comment> Comments { get; set; }  
 }  
-
+```
 ### 💬 Comment.cs  
+```csharp
 public class Comment  
 {  
     public int Id { get; set; }  
@@ -38,7 +40,7 @@ public class Comment
     public int StockId { get; set; }  
     public Stock Stock { get; set; }  
 }  
-
+````
 ## 📦 How to Run
 
 1. Clone the repository:  
